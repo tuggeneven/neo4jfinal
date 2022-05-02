@@ -8,6 +8,7 @@ const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 export default async function handler(req, res) {
     const session = driver.session();
+    const totalStudent_response = await_session.run( query: 'MATCH (s) RETURN s';
 }
 
 
