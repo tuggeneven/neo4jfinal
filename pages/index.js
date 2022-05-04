@@ -16,9 +16,9 @@ export default function Home() {
             <h1>TEAC882 Final</h1>
         </header>
         <main>
-            <button> All Students</button>
-            <button> All Modules </button>
-            <button> All Locations</button>
+            <button className={"glow-on-hover"}> All Students</button>
+            <button className={"glow-on-hover"}> All Modules </button>
+            <button className={"glow-on-hover"}> All Locations</button>
         </main>
         <footer>
         Description:
