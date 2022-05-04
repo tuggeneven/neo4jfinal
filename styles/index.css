@@ -8,11 +8,11 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    background: red;
+    background: #404040;
 }
 
 header{
-    width: 100%;
+    width: 600px;
     height: 130px;
     background: #252525;
     display: flex;
