@@ -1,12 +1,12 @@
 import Head from 'next/head'
 
 
-const studentsApi = 'https://neo4jfinal.vercel.app/api/allstudents';
-const modulesApi = 'https://neo4jfinal.vercel.app/api/allmodules';
-const locationsApi = 'https://neo4jfinal.vercel.app/api/alllocations';
-
-fetch(studentsApi)
-    .then(res)
+// const studentsApi = 'https://neo4jfinal.vercel.app/api/allstudents';
+// const modulesApi = 'https://neo4jfinal.vercel.app/api/allmodules';
+// const locationsApi = 'https://neo4jfinal.vercel.app/api/alllocations';
+//
+// fetch(studentsApi)
+//     .then(res)
 
 
 export default function Home() {
