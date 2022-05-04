@@ -1,7 +1,13 @@
 import Head from 'next/head'
 
 
-const studentsApi = ''
+const studentsApi = 'https://neo4jfinal.vercel.app/api/allstudents';
+const modulesApi = 'https://neo4jfinal.vercel.app/api/allmodules';
+const locationsApi = 'https://neo4jfinal.vercel.app/api/alllocations';
+
+fetch(studentsApi)
+    .then(res)
+
 
 export default function Home() {
   return (
@@ -11,7 +17,7 @@ export default function Home() {
         </header>
         <main>
             <button> All Students</button>
-            <button> All Modules</button>
+            <button> All Modules </button>
             <button> All Locations</button>
         </main>
         <footer>
