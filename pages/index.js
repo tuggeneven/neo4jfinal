@@ -9,6 +9,10 @@ export default function Home() {
         <header>
             <h1>TEAC882 Final</h1>
         </header>
+        <main></main>
+        <footer>
+
+        </footer>
     </div>
   )
 }
