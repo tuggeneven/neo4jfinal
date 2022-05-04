@@ -6,8 +6,9 @@ const studentsApi = ''
 export default function Home() {
   return (
     <div>
-        <p>Lets Go!</p>
-        <main> Hello </main>
+        <header>
+            <h1>TEAC882 Final</h1>
+        </header>
     </div>
   )
 }
