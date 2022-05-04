@@ -3,8 +3,13 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
-      Hello from next.js
-    </div>
+      <body>
+      <header>LETS GOO!</header>
+
+      <main>      </main>
+
+      <footer>      </footer>
+
+      </body>
   )
 }
