@@ -10,7 +10,7 @@ export default function Home() {
             <title>TEAC882  Final Project</title>
         </Head>
 
-        <header className={styles.banner}>
+        <header className={styles.header}>
             <h1 className={styles.title}>TEAC882 Final</h1>
         </header>
         <main className={styles.main}></main>
