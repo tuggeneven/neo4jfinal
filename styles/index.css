@@ -40,8 +40,12 @@ main{
     color: #fff;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+button {
     margin-right: 2rem;
 }
+
 
 footer {
     position: fixed;
