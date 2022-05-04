@@ -9,6 +9,7 @@ import Head from 'next/head'
 //     .then(res)
 
 
+
 export default function Home() {
   return (
     <div>
