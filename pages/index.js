@@ -11,7 +11,7 @@ export default function Home() {
         </header>
         <main></main>
         <footer>
-
+        Description:
         </footer>
     </div>
   )
