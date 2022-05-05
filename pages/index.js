@@ -24,11 +24,14 @@ async function getStudents(req, res) {
         allStudentObj = record.toObject();
         console.log(allStudentObj);
     })
+    document.getElementById('studentObject').innerHTML = allStudentObj;
 }
 
-document.getElementById('studentsBtn').innerHTML = allStudentObj;
+
 
 export default function Home() {
+    getStudents();
+
   return (
     <div>
         <header>
@@ -40,10 +43,13 @@ export default function Home() {
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Average Compilation Time</button>
             <button className={"glow-on-hover"}> Average Scores</button>
+            <div id={'studentObject'}></div>
         </main>
         <footer>
         Description:
         </footer>
     </div>
+
   )
 }
+
