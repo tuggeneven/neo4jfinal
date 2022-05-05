@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+
 let allStudentObj;
 let allModulesObj;
 let allLocationsObj;
@@ -25,7 +26,9 @@ async function getStudents(req, res) {
     })
 }
 
-studentsBtn.document.addEventListener("click", getStudents);
+const studentsBtn = document.getElementById("studentsBtn");
+
+studentsBtn.addEventListener("click", getStudents);
 
 export default function Home() {
   return (
