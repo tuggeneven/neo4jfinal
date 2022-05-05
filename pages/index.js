@@ -25,7 +25,7 @@ async function getStudents(req, res) {
     })
 }
 
-studentsBtn.document.addEventListener("click", getStudents());
+studentsBtn.document.addEventListener("click", getStudents);
 
 export default function Home() {
   return (
