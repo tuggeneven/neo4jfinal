@@ -16,7 +16,7 @@ const password = process.env.NEO4J;
 
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
-async function getStudents(req, res) {
+async function students_btn(req, res) {
     const session = driver.session();
     const response = await session.run('MATCH (s:Student) RETURN s');
 
@@ -38,7 +38,7 @@ export default function Home() {
             <h1>TEAC882 Final</h1>
         </header>
         <main>
-            <button className={"glow-on-hover"} onClick={studentsBtn()}>Students IDs</button>
+            <button className={"glow-on-hover"} onClick={'studentsBtn'}>Students IDs</button>
             <button className={"glow-on-hover"}> Modules </button>
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Average Compilation Time</button>
