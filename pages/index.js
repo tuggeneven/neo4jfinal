@@ -5,9 +5,7 @@ const studentsApi = 'https://neo4jfinal.vercel.app/api/allstudents';
 const modulesApi = 'https://neo4jfinal.vercel.app/api/allmodules';
 const locationsApi = 'https://neo4jfinal.vercel.app/api/alllocations';
 
-studentsBtn.document.addEventListener("click", function () {
 
-})
 
 
 export default function Home() {
