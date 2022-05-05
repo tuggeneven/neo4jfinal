@@ -9,7 +9,7 @@ let avgScoreObj;
 
 import neo4j from "neo4j-driver";
 
-//setting up
+//setting up the API in driver
 const uri = 'neo4j+s://955946c8.databases.neo4j.io';
 const user = 'neo4j';
 const password = process.env.NEO4J;
@@ -43,7 +43,7 @@ export default function Home() {
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Average Compilation Time</button>
             <button className={"glow-on-hover"}> Average Scores</button>
-            <div id={'studentObject'}></div>
+            {/*<div id={'studentObject'}></div>*/}
         </main>
         <footer>
         Description:
