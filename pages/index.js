@@ -26,9 +26,7 @@ async function getStudents(req, res) {
     })
 }
 
-const studentsBtn = document.getElementById("studentsBtn");
-
-studentsBtn.addEventListener("click", getStudents);
+document.getElementById('studentsBtn').innerHTML = allStudentObj;
 
 export default function Home() {
   return (
@@ -37,7 +35,7 @@ export default function Home() {
             <h1>TEAC882 Final</h1>
         </header>
         <main>
-            <button className={"glow-on-hover"} id={'studentsBtn'}> Students IDs</button>
+            <button className={"glow-on-hover"} onClick={'studentsBtn'}> Students IDs</button>
             <button className={"glow-on-hover"}> Modules </button>
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Average Compilation Time</button>
