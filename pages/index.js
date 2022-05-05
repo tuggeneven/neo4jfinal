@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
 
-const studentsApi = 'https://neo4jfinal.vercel.app/api/allstudents';
-const modulesApi = 'https://neo4jfinal.vercel.app/api/allmodules';
-const locationsApi = 'https://neo4jfinal.vercel.app/api/alllocations';
+// const studentsApi = 'https://neo4jfinal.vercel.app/api/allstudents';
+// const modulesApi = 'https://neo4jfinal.vercel.app/api/allmodules';
+// const locationsApi = 'https://neo4jfinal.vercel.app/api/alllocations';
 
 
 
