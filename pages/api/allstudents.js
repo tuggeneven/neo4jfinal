@@ -15,3 +15,5 @@ export default async function handler(req, res) {
     })
     res.status(200).json({body: records});
 }
+
+console.log('hello');
