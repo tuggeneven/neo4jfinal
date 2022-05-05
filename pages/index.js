@@ -16,7 +16,7 @@ const password = process.env.NEO4J;
 
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
-async function students_btn(req, res) {
+async function studentsBtn(req, res) {
     const session = driver.session();
     const response = await session.run('MATCH (s:Student) RETURN s');
         console.log(response)
@@ -25,8 +25,9 @@ async function students_btn(req, res) {
         allStudentObj = record.toObject();
         console.log(allStudentObj);
     })
-    document.getElementById('studentObject').innerHTML = allStudentObj;
+    // document.getElementById('studentObject').innerHTML = allStudentObj;
 }
+
 
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Average Compilation Time</button>
             <button className={"glow-on-hover"}> Average Scores</button>
-            {/*<div id={'studentObject'}></div>*/}
+            <div id={'studentObject'}></div>
         </main>
         <footer>
         Description:
