@@ -1,6 +1,8 @@
 import Head from 'next/head';
-import Content from "../pages/Components/Content";
+import React from "react";
 import neo4j from "neo4j-driver";
+import styles from "../styles/index.css";
+
 
 // JS codes
 let allDataObj;
@@ -59,7 +61,13 @@ export default function Home() {
         </header>
         <main>
             <div className="columnOne">
-                <Content />
+                <div className={styles.contentcontainer}>
+                    <div className={styles.contentwrapper}>
+                        <div className={styles.categories}>
+                            <h2>Categories</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="columnTwo">hello</div>
         </main>
