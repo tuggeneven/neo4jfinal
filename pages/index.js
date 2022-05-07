@@ -61,7 +61,12 @@ export default function Home() {
         </header>
 
         <main>
-            <leftcolumn className="columnOne"></leftcolumn>
+            <leftcolumn className="columnOne">
+                <div className={styles.contentContainer}>
+                    <div className={styles.contentWrapper}>
+                    </div>
+                </div>
+            </leftcolumn>
             <rightcolumn className="columnTwo"></rightcolumn>
         </main>
 
