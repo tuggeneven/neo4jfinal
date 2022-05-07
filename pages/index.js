@@ -61,14 +61,8 @@ export default function Home() {
         </header>
 
         <main>
-            <div className="columnOne">
-                <div className={styles.contentcontainer}>
-                    <div className={styles.contentwrapper}>
-                        </div>
-                    </div>
-                </div>
-
-            <div className="columnTwo">hello</div>
+            <leftcolumn className="columnOne"></leftcolumn>
+            <rightcolumn className="columnTwo"></rightcolumn>
         </main>
 
         <footer>
