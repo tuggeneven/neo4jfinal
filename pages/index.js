@@ -9,8 +9,7 @@ let allLocationsObj;
 let avgCompTimeObj;
 let avgScoreObj;
 
-import neo4j from "neo4j-driver";
-// import Content from "./Components/Content";
+// import neo4j from "neo4j-driver";
 
 //setting up the API in driver
 // const uri = 'neo4j+s://955946c8.databases.neo4j.io';
