@@ -35,14 +35,15 @@ export default function Home() {
   return (
     <div>
         <header>
-            <h1>TEAC882 Final</h1>
-        </header>
-        <main>
+            <h1>TEAC882 Final</h1><br>
             <button className={"glow-on-hover"}>Students IDs</button>
             <button className={"glow-on-hover"}> Modules </button>
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Avg. Compilation Time</button>
             <button className={"glow-on-hover"}> Avg Scores</button>
+        </header>
+        <main>
+
         </main>
         <footer>
         Description:
