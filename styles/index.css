@@ -123,11 +123,15 @@ footer {
     100% { background-position: 0 0; }
 }
 
-.column {
+.columnOne {
     float: left;
-    width: 50%;
+    width: 80%;
 }
 
+.columnTwo {
+    float: left;
+    width: 20%;
+}
 /* Clear floats after the columns */
 .row:after {
     content: "";

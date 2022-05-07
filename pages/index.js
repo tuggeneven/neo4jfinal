@@ -43,8 +43,8 @@ export default function Home() {
             <button className={"glow-on-hover"}> Avg Scores</button>
         </header>
         <main>
-            <div className="column">hello</div>
-            <div className="column">hello</div>
+            <div className="columnOne">hello</div>
+            <div className="columnTwo">hello</div>
         </main>
         <footer>
         Description:
