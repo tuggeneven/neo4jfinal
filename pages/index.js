@@ -3,9 +3,9 @@ import React from "react";
 import neo4j from "neo4j-driver";
 
 
-
+console.log('hello');
 // JS codes
-let allDataObj;
+let allData;
 
 
 
@@ -22,7 +22,7 @@ async function studentsBtn(req, res) {
     const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
 
     const records = responseAll.records.map((record) => {
-        allDataObj = record.toObject();
+        allData = record.toObject();
 
     })
 
