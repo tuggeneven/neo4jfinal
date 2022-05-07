@@ -27,8 +27,7 @@ async function studentsBtn(req, res) {
 
 }
 
-document.getElementById('footer').innerHTML = `Data: ${allDataObj}`;
-
+console.log(allDataObj)
 
 export default function Home() {
 
@@ -36,17 +35,17 @@ export default function Home() {
     <div>
         <header>
             <h1>TEAC882 Final</h1>
-            <button className={"glow-on-hover"} id={'studentsBtn'}>Students IDs</button>
-            <button className={"glow-on-hover"} id={"modulesBtn"}> Modules </button>
-            <button className={"glow-on-hover"} id={'locationsBtn'} > Locations</button>
-            <button className={"glow-on-hover"} id={'timeBtn'} > Avg. Compilation Time</button>
-            <button className={"glow-on-hover"} id={'scoreBtn'} > Avg. Scores</button>
+            <button className={"glow-on-hover"}>Students IDs</button>
+            <button className={"glow-on-hover"}> Modules </button>
+            <button className={"glow-on-hover"}> Locations</button>
+            <button className={"glow-on-hover"}> Avg. Compilation Time</button>
+            <button className={"glow-on-hover"}> Avg. Scores</button>
         </header>
         <main>
-            <div className="columnOne" id={'leftClm'}>hello</div>
-            <div className="columnTwo" id={'rightClm'}>hello</div>
+            <div className="columnOne">hello</div>
+            <div className="columnTwo">hello</div>
         </main>
-        <footer id={'footer'}>
+        <footer>
 
         </footer>
     </div>
