@@ -43,7 +43,6 @@ export default function Home() {
             <button className={"glow-on-hover"}> Locations</button>
             <button className={"glow-on-hover"}> Average Compilation Time</button>
             <button className={"glow-on-hover"}> Average Scores</button>
-            {/*<div id={'studentObject'}></div>*/}
         </main>
         <footer>
         Description:
