@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Content from "../pages/Components/Content"
+import Content from "../pages/Components/Content";
 import neo4j from "neo4j-driver";
 
 // JS codes
