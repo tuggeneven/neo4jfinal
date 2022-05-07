@@ -1,4 +1,4 @@
-
+import Head from 'next/head';
 
 // JS codes
 let allDataObj;
@@ -29,10 +29,16 @@ async function studentsBtn(req, res) {
 
 console.log(allDataObj)
 
+
+// HTML index page
 export default function Home() {
 
   return (
     <div>
+        <Head>
+            <title>TEAC882</title>
+            <meta name="description" content="Created by Tuggen Even" />
+        </Head>
         <header>
             <h1>TEAC882 Final</h1>
             <button className={"glow-on-hover"}>Students IDs</button>
