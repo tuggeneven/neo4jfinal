@@ -41,8 +41,8 @@ export default function Home() {
             <button className={"glow-on-hover"}>Students IDs</button>
             <button className={"glow-on-hover"}> Modules </button>
             <button className={"glow-on-hover"}> Locations</button>
-            <button className={"glow-on-hover"}> Average Compilation Time</button>
-            <button className={"glow-on-hover"}> Average Scores</button>
+            <button className={"glow-on-hover"}> Avg. Compilation Time</button>
+            <button className={"glow-on-hover"}> Avg Scores</button>
         </main>
         <footer>
         Description:
