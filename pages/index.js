@@ -4,11 +4,12 @@ import neo4j from "neo4j-driver";
 
 
 console.log('hello');
+
+
+
 // JS codes
-let allData;
 
-
-
+let callBack;
 
 // setting up the API in driver
 const uri = 'neo4j+s://955946c8.databases.neo4j.io';
@@ -22,10 +23,9 @@ async function studentsBtn(req, res) {
     const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
 
     const records = responseAll.records.map((record) => {
-        allData = record.toObject();
+        callBack = record.toObject();
 
     })
-
 }
 
 
