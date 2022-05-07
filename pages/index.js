@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 // JS codes
-let allStudentObj;
+let allDataObj;
 let allModulesObj;
 let allLocationsObj;
 let avgCompTimeObj;
@@ -18,16 +18,16 @@ const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 async function studentsBtn(req, res) {
     const session = driver.session();
-    const response = await session.run('MATCH (s:Student) RETURN s');
-        console.log(response)
+    const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
 
-    const records = response.records.map((record) => {
-        allStudentObj = record.toObject();
-        console.log(allStudentObj);
+    const records = responseAll.records.map((record) => {
+        allDataObj = record.toObject();
+
     })
 
 }
 
+document.getElementById('footer').innerHTML = `Data: ${allDataObj}`;
 
 
 export default function Home() {
@@ -36,18 +36,18 @@ export default function Home() {
     <div>
         <header>
             <h1>TEAC882 Final</h1>
-            <button className={"glow-on-hover"}>Students IDs</button>
-            <button className={"glow-on-hover"}> Modules </button>
-            <button className={"glow-on-hover"}> Locations</button>
-            <button className={"glow-on-hover"}> Avg. Compilation Time</button>
-            <button className={"glow-on-hover"}> Avg Scores</button>
+            <button className={"glow-on-hover"} id={'studentsBtn'}>Students IDs</button>
+            <button className={"glow-on-hover"} id={"modulesBtn"}> Modules </button>
+            <button className={"glow-on-hover"} id={'locationsBtn'} > Locations</button>
+            <button className={"glow-on-hover"} id={'timeBtn'} > Avg. Compilation Time</button>
+            <button className={"glow-on-hover"} id={'scoreBtn'} > Avg. Scores</button>
         </header>
         <main>
             <div className="columnOne" id={'leftClm'}>hello</div>
             <div className="columnTwo" id={'rightClm'}>hello</div>
         </main>
-        <footer>
-        Description:
+        <footer id={'footer'}>
+
         </footer>
     </div>
   )
