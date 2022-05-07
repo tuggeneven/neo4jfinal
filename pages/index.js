@@ -63,12 +63,10 @@ export default function Home() {
             <div className="columnOne">
                 <div className={styles.contentcontainer}>
                     <div className={styles.contentwrapper}>
-                        <div className={styles.categories}>
-                            <h2>Categories</h2>
                         </div>
                     </div>
                 </div>
-            </div>
+
             <div className="columnTwo">hello</div>
         </main>
         <footer>

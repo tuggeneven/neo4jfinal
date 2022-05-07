@@ -155,11 +155,4 @@ footer {
     gap: 40px;
 }
 
-.contentcontainer {
-    margin-left: 70px;
-}
 
-.contentwrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-}
