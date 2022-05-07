@@ -29,14 +29,14 @@ async function studentsBtn(req, res) {
 }
 
 
-// const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
-//
-// //Fetching the API on page load
-// let allData = function pullData () {
-//     fetch(allApi)
-//         .then(response => response.json())
-//         .then(data => console.log(data));
-// }
+const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
+
+//Fetching the API on page load
+let allData = function pullData () {
+    fetch(allApi)
+        .then(response => response.json())
+        .then(data => console.log(data));
+}
 
 
 // HTML index page
