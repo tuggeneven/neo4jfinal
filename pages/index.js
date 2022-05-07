@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Content from "../pages/Components/Content"
-
+import neo4j from "neo4j-driver";
 
 // JS codes
 let allDataObj;
@@ -9,31 +9,31 @@ let allLocationsObj;
 let avgCompTimeObj;
 let avgScoreObj;
 
-// import neo4j from "neo4j-driver";
 
-//setting up the API in driver
-// const uri = 'neo4j+s://955946c8.databases.neo4j.io';
-// const user = 'neo4j';
-// const password = process.env.NEO4J;
-//
-// const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
-//
-// async function studentsBtn(req, res) {
-//     const session = driver.session();
-//     const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
-//
-//     const records = responseAll.records.map((record) => {
-//         allDataObj = record.toObject();
-//
-//     })
-//
-// }
+
+// setting up the API in driver
+const uri = 'neo4j+s://955946c8.databases.neo4j.io';
+const user = 'neo4j';
+const password = process.env.NEO4J;
+
+const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
+
+async function studentsBtn(req, res) {
+    const session = driver.session();
+    const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
+
+    const records = responseAll.records.map((record) => {
+        allDataObj = record.toObject();
+
+    })
+
+}
 
 
 const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
 //Fetching the API on page load
-pullJson = function pullData () {
+let allData = function pullData () {
     fetch(allApi)
         .then(response => response.json())
         .then(data => console.log(data));
