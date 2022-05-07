@@ -29,6 +29,7 @@ let avgScoreObj;
 //
 // }
 
+
 const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
 //Fetching the API on page load
