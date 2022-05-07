@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Content from "../pages/Components/Content"
+
 
 // JS codes
 let allDataObj;
@@ -8,6 +10,7 @@ let avgCompTimeObj;
 let avgScoreObj;
 
 import neo4j from "neo4j-driver";
+import Content from "./Components/Content";
 
 //setting up the API in driver
 // const uri = 'neo4j+s://955946c8.databases.neo4j.io';
@@ -55,7 +58,9 @@ export default function Home() {
             <button className={"glow-on-hover"}> Avg. Scores</button>
         </header>
         <main>
-            <div className="columnOne">hello</div>
+            <div className="columnOne">
+                <Content />
+            </div>
             <div className="columnTwo">hello</div>
         </main>
         <footer>
