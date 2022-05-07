@@ -59,8 +59,8 @@ export default function Home() {
 
         <main>
             <leftcolumn className="columnOne">
-                <div className={contentContainer}>
-                    <div className={contentWrapper}>
+                <div className={"contentContainer"}>
+                    <div className={"contentWrapper"}>
                     </div>
                 </div>
             </leftcolumn>
