@@ -59,6 +59,7 @@ export default function Home() {
             <button className={"glow-on-hover"}> Avg. Compilation Time</button>
             <button className={"glow-on-hover"}> Avg. Scores</button>
         </header>
+
         <main>
             <div className="columnOne">
                 <div className={styles.contentcontainer}>
@@ -69,6 +70,7 @@ export default function Home() {
 
             <div className="columnTwo">hello</div>
         </main>
+
         <footer>
 
         </footer>
