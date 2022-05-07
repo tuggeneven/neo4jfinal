@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div>
         <header>
-            <h1>TEAC882 Final</h1><br>
+            <h1>TEAC882 Final</h1>
             <button className={"glow-on-hover"}>Students IDs</button>
             <button className={"glow-on-hover"}> Modules </button>
             <button className={"glow-on-hover"}> Locations</button>
@@ -49,7 +49,6 @@ export default function Home() {
         Description:
         </footer>
     </div>
-
   )
 }
 
