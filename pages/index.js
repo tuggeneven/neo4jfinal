@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-
+// JS codes
 let allStudentObj;
 let allModulesObj;
 let allLocationsObj;
@@ -25,7 +25,7 @@ async function studentsBtn(req, res) {
         allStudentObj = record.toObject();
         console.log(allStudentObj);
     })
-    // document.getElementById('studentObject').innerHTML = allStudentObj;
+
 }
 
 
@@ -43,7 +43,8 @@ export default function Home() {
             <button className={"glow-on-hover"}> Avg Scores</button>
         </header>
         <main>
-
+            <div className="column"></div>
+            <div className="column"></div>
         </main>
         <footer>
         Description:
