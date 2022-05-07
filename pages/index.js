@@ -28,6 +28,7 @@ async function studentsBtn(req, res) {
     })
 }
 
+console.log(callBack);
 
 const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
