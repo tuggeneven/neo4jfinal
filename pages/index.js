@@ -38,6 +38,7 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
    const totalData =  fetch(allApi)
         .then(response => response.json())
         .then(data => {
+
             console.log(data)
         });
 // }
@@ -56,10 +57,10 @@ export default function Home() {
         <header>
             <h1>TEAC882 Final</h1>
             <button className="glow-on-hover">Students IDs</button>
-            <button className={"glow-on-hover"}> Modules </button>
-            <button className={"glow-on-hover"}> Locations</button>
-            <button className={"glow-on-hover"}> Avg. Compilation Time</button>
-            <button className={"glow-on-hover"}> Avg. Scores</button>
+            <button className="glow-on-hover"> Modules </button>
+            <button className="glow-on-hover"> Locations</button>
+            <button className="glow-on-hover"> Avg. Compilation Time</button>
+            <button className="glow-on-hover"> Avg. Scores</button>
         </header>
 
         <main>
@@ -72,16 +73,14 @@ export default function Home() {
                            </div>
                            <div className="circle">
                                <h2>text here</h2>
-                               <Line width={400} height={400}></Line>
+                               {/*<Line data={totalData}> width={400} height={400}></Line>*/}
 
                            </div>
                        </div>
                     </div>
                 </div>
             </leftcolumn>
-            <rightcolumn className="columnTwo">
-
-            </rightcolumn>
+            <rightcolumn className="columnTwo"></rightcolumn>
         </main>
 
         <footer>
