@@ -43,7 +43,11 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
         });
 // }
 
-getElementById('graph').innerText=`Data: ${data}`;
+function test () {
+    getElementById('graph').innerText=`Data: ${data}`;
+}
+
+
 
 // HTML index page
 export default function Home() {
