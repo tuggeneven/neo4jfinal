@@ -38,6 +38,7 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
    const totalData =  fetch(allApi)
         .then(response => response.json())
         .then(data => {
+
             console.log(data)
         });
 // }
@@ -63,10 +64,10 @@ export default function Home() {
         </header>
 
         <main>
-            <leftcolumn className="columnOne">
-                <div className={"contentContainer"}>
-                    <div className={"contentWrapper"}>
-                       <div className={"charts"}>
+            <leftcolumn className="columnOne" id="">
+                <div className="contentContainer">
+                    <div className="contentWrapper">
+                       <div className="charts">
                            <div className={"bar"}>
                                <h2>text here</h2>
                            </div>
