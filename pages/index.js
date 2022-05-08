@@ -35,22 +35,15 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
 // Fetching the API on page load
 
-   // const totalData =  fetch(allApi)
-   //      .then(response => response.json())
-   //      .then(data => {
-   //
-   //          console.log(data)
-   //      });
+   const totalData =  fetch(allApi)
+        .then(response => response.json())
+        .then(data => {
+
+            console.log(data)
+        });
 
 
-export const getData = async () => {
-    const res = await fetch(allApi);
-    const data = await res.json();
 
-    return {
-        props: {users: data},
-    }
-}
 
 
 // HTML index page
@@ -88,13 +81,10 @@ export default function Home() {
                     </div>
                 </div>
             </leftcolumn>
-            <rightcolumn className="columnTwo" id="dataText">
-                {users.map(func => (
-                    <div key={func.user_id}>
-                        <h5>{func.Module_ID}</h5>
-                    </div>
+            <rightcolumn className="columnTwo">
 
-                ))}
+
+
             </rightcolumn>
         </main>
 
