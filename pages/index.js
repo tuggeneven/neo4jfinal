@@ -37,7 +37,7 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 // let allData = function pullData () {
    const totalData =  fetch(allApi)
         .then(response => response.json())
-        .then(data => console.log(totalData));
+        .then(data => console.log(data));
 // }
 
 
