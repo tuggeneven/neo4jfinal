@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import React from "react";
 import neo4j from "neo4j-driver";
-
+import { Line } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 
 console.log('hello');
 
@@ -60,8 +61,17 @@ export default function Home() {
 
         <main>
             <leftcolumn className="columnOne">
-                <div className={"contentContainer"}>Hello1
-                    <div className={"contentWrapper"}>hello2
+                <div className={"contentContainer"}>
+                    <div className={"contentWrapper"}>
+                       <div className={"charts"}>
+                           <div className={"bar"}>
+                               <h2>text here</h2>
+                           </div>
+                           <div className={"circle"}>
+                               <h2>text here</h2>
+                               <Line data={data} width={400} height={400} />
+                           </div>
+                       </div>
                     </div>
                 </div>
             </leftcolumn>
