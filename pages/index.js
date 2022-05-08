@@ -35,10 +35,26 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
 // Fetching the API on page load
 // let allData = function pullData () {
-   const totalData =  fetch(allApi)
-        .then(response => response.json())
-        .then(data => console.log(data));
+//    const totalData =  fetch(allApi)
+//         .then(response => response.json())
+//         .then(data => console.log(totalData));
 // }
+
+const data = PullingData => {
+    fetch(allApi)
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("NETWORK RESPONSE ERROR");
+            }
+        })
+        .then(data => {
+            console.log(data);
+
+        })
+        .catch((error) => console.error("FETCH ERROR:", error));
+}
 
 
 // HTML index page
@@ -68,7 +84,7 @@ export default function Home() {
                          </div>
                          <div className={"circle"}>
                              <h2>text here</h2>
-                             <Line data={totalData}> width={400} height={400}></Line>
+                             <Line data={data}> width={400} height={400}></Line>
 
                          </div>
                      </div>
