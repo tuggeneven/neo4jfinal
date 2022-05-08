@@ -35,7 +35,8 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
 // Fetching the API on page load
 // let allData = function pullData () {
-   const totalData =  fetch(allApi)
+
+        fetch(allApi)
         .then(response => response.json())
         .then(data => console.log(data));
 // }
@@ -75,9 +76,7 @@ export default function Home() {
                   </div>
               </div>
           </div>
-          <div className="columnTwo">
-
-          </div>
+          <div className="columnTwo"></div>
       </main>
 
       <footer>
