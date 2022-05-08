@@ -69,7 +69,7 @@ export default function Home() {
                            </div>
                            <div className={"circle"}>
                                <h2>text here</h2>
-                               <Line data={totalData.labels}> width={400} height={400} />
+                               <Line data={totalData}> width={400} height={400}></Line>
 
                            </div>
                        </div>
