@@ -38,7 +38,6 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
    const totalData =  fetch(allApi)
         .then(response => response.json())
         .then(data => {
-            document.getElementById("graph").innerHTML
             console.log(data)
         });
 // }
