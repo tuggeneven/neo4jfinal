@@ -35,53 +35,67 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
 
 // Fetching the API on page load
 // let allData = function pullData () {
-
-        fetch(allApi)
-        .then(response => response.json())
-        .then(data => console.log(data));
+//    const totalData =  fetch(allApi)
+//         .then(response => response.json())
+//         .then(data => {
+//             console.log(totalData)
+//         });
 // }
 
+let dataArray;
+
+function showData (){
+    fetch(allApi)
+        .then(res => res.json())
+        .then(function(data){
+            dataArray = data.results;
+        })
+}
+
+console.log(showData());
 
 // HTML index page
 export default function Home() {
 
-  return <div>
-      <Head>
-          <title>TEAC882</title>
-          <meta name="description" content="Created by Tuggen Even" />
-      </Head>
-      <header>
-          <h1>TEAC882 Final</h1>
-          <button className={"glow-on-hover"}>Students IDs</button>
-          <button className={"glow-on-hover"}> Modules </button>
-          <button className={"glow-on-hover"}> Locations</button>
-          <button className={"glow-on-hover"}> Avg. Compilation Time</button>
-          <button className={"glow-on-hover"}> Avg. Scores</button>
-      </header>
+  return (
+    <div>
+        <Head>
+            <title>TEAC882</title>
+            <meta name="description" content="Created by Tuggen Even" />
+        </Head>
+        <header>
+            <h1>TEAC882 Final</h1>
+            <button className={"glow-on-hover"}>Students IDs</button>
+            <button className={"glow-on-hover"}> Modules </button>
+            <button className={"glow-on-hover"}> Locations</button>
+            <button className={"glow-on-hover"}> Avg. Compilation Time</button>
+            <button className={"glow-on-hover"}> Avg. Scores</button>
+        </header>
 
-      <main>
-          <div className="columnOne">
-              <div className={"contentContainer"}>
-                  <div className={"contentWrapper"}>
-                     <div className={"charts"}>
-                         <div className={"bar"}>
-                             <h2>text here</h2>
-                         </div>
-                         <div className={"circle"}>
-                             <h2>text here</h2>
-                             <Line data={totalData}> width={400} height={400}></Line>
+        <main>
+            <leftcolumn className="columnOne">
+                <div className={"contentContainer"}>
+                    <div className={"contentWrapper"}>
+                       <div className={"charts"}>
+                           <div className={"bar"}>
+                               <h2>text here</h2>
+                           </div>
+                           <div className={"circle"}>
+                               <h2>text here</h2>
+                               {/*<Line data={totalData}> width={400} height={400}></Line>*/}
 
-                         </div>
-                     </div>
-                  </div>
-              </div>
-          </div>
-          <div className="columnTwo"></div>
-      </main>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </leftcolumn>
+            <rightcolumn className="columnTwo"></rightcolumn>
+        </main>
 
-      <footer>
+        <footer>
 
-      </footer>
-  </div>
+        </footer>
+    </div>
+  )
 }
 
