@@ -39,7 +39,7 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
         .then(response => response.json())
         .then(data => {
 
-            console.table(data.properties)
+            console.table(data)
         });
 // }
 
