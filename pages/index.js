@@ -53,6 +53,7 @@ function showData (){
         })
 }
 
+showData();
 
 
 // HTML index page
