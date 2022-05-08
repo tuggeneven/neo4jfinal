@@ -47,6 +47,7 @@ function test () {
     getElementById('graph').innerText=`Data: ${data}`;
 }
 
+test();
 
 
 // HTML index page
