@@ -60,8 +60,8 @@ export default function Home() {
 
         <main>
             <leftcolumn className="columnOne">
-                <div className={"contentContainer"}>
-                    <div className={"contentWrapper"}>
+                <div className={"contentContainer"}>Hello1
+                    <div className={"contentWrapper"}>hello2
                     </div>
                 </div>
             </leftcolumn>
