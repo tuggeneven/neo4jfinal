@@ -25,10 +25,10 @@ async function allData(request, response) {
 
     const records = responseAll.records.map((record) => {
         callBack = record.toObject();
-        console.log(callBack);
+
     })
 }
-
+console.log(callBack);
 
 
 // const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
@@ -72,7 +72,7 @@ export default function Home() {
                                <h2>text here</h2>
                            </div>
                            <div className={"circle"}>
-                               <h2>text here</h2>
+                               <h5>text here</h5>
                                {/*<Line data={totalData}> width={400} height={400}></Line>*/}
 
                            </div>
