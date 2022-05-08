@@ -39,11 +39,11 @@ const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
         .then(response => response.json())
         .then(data => {
 
-            console.table(data)
+            console.log(data)
         });
 // }
 
-
+getElementById('graph').innerText=`Data: ${data}`;
 
 // HTML index page
 export default function Home() {
