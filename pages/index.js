@@ -49,10 +49,11 @@ function showData (){
         .then(res => res.json())
         .then(function(data){
             dataArray = data.results;
+            console.log(dataArray);
         })
 }
 
-console.log(showData());
+
 
 // HTML index page
 export default function Home() {
