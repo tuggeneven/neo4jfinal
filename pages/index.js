@@ -44,22 +44,22 @@ export default function Home() {
                 <div className='contentWrapper'>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover">Students IDs</button>
+                            <button className="glow-on-hover">Students</button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover"></button>
+                            <button className="glow-on-hover">Module</button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover"></button>
+                            <button className="glow-on-hover">Locations</button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover"></button>
+                            <button className="glow-on-hover">Avg. Compilation Time</button>
                         </div>
                     </div>
                     <div className='buttons'>
