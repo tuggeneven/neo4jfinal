@@ -35,11 +35,10 @@ main{
     height: max-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     background: #404040;
     color: #fff;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 button {
@@ -155,4 +154,41 @@ footer {
     gap: 40px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: #111;
+}
 
+@media only screen and (max-width:768px){
+    .contentContainer{
+        margin-left:70px;
+        
+    }
+    .contentWrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+       width: 350px;
+       margin-left: -180px;
+       margin-bottom: -25px;
+       justify-content: auto;
+       
+        }
+    main    {
+            width: 100vw;
+            height: max-content;
+            display: grid;
+            flex-wrap: wrap;
+            background: #404040;
+            color: #fff;
+            
+            justify-content: left;
+            margin-left:70px;
+        
+        }
+}
