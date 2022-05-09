@@ -54,12 +54,12 @@ export default function Home() {
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover"</button>
+                            <button className="glow-on-hover"></button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover"</button>
+                            <button className="glow-on-hover"></button>
                         </div>
                     </div>
                     <div className='buttons'>
