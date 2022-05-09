@@ -26,7 +26,7 @@ async function allData(request, response) {
     const records = students.records.map((record) => {
         let allData = record.toObject();
         console.log("Data:", allData);
-        document.getElementById('contentArea').innerHTML
+
     })
 }
 
