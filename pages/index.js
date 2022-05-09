@@ -21,9 +21,9 @@ const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 async function allData(request, response) {
     const session = driver.session();
-    const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
-
-    const records = responseAll.records.map((record) => {
+    // const responseAll = await session.run('MATCH (n1:LOCATION)<-[r1:LIVES_IN]-(n2:Student)-[r2:ENGAGED_WITH]->(n3:Module) RETURN (n1)<-[r1]-(n2)-[r2]->(n3)');
+    const students = await session.run('MATCH (s:student) RETURN s');
+    const records = students.records.map((record) => {
         callBack = record.toObject();
         console.log(callBack);
     })
