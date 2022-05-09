@@ -44,27 +44,27 @@ export default function Home() {
                 <div className='contentWrapper'>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover" onClick={studentBtn}>Students IDs</button>
+                            <button className="glow-on-hover">Students IDs</button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover" onClick={moduleBtn}>Modules </button>
+                            <button className="glow-on-hover"></button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover" onClick={locationBtn}>Locations</button>
+                            <button className="glow-on-hover"</button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover" onClick={timeBtn}>Avg. Compilation Time</button>
+                            <button className="glow-on-hover"</button>
                         </div>
                     </div>
                     <div className='buttons'>
                         <div className='categories'>
-                            <button className="glow-on-hover" onClick={scoreBtn}>Avg. Scores</button>
+                            <button className="glow-on-hover">Avg. Scores</button>
                         </div>
                     </div>
                 </div>
