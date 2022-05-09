@@ -25,10 +25,11 @@ async function allData(request, response) {
     const students = await session.run('MATCH (s:student) RETURN s');
     const records = students.records.map((record) => {
         callBack = record.toObject();
-        console.log(callBack);
+
     })
 }
 
+console.log(callBack);
 
 
 // const allApi = "https://neo4jfinal.vercel.app/api/allstudents";
