@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import React from "react";
-import Content from "../pages/Components/Content";
-import Footer from '../pages/Components/Footer';
-import Header from '../pages/Components/Header';
+
 
 const uri = 'neo4j+s://955946c8.databases.neo4j.io';
 const user = 'neo4j';
@@ -37,9 +35,57 @@ export default function Home() {
   return (
     <div>
       <Head />
-      <Header />
-      <Content />                         
-      <Footer />
+        <header>
+            <h1>TEAC882 Final</h1>
+        </header>
+        <main>
+            <div className='.contentContainer'>
+                <div className='contentWrapper'>
+                    <div className='buttons'>
+                        <div className='categories'>
+                            <button className="glow-on-hover" onClick={studentBtn}>Students IDs</button>
+                        </div>
+                    </div>
+                    <div className='buttons'>
+                        <div className='categories'>
+                            <button className="glow-on-hover" onClick={moduleBtn}>Modules </button>
+                        </div>
+                    </div>
+                    <div className='buttons'>
+                        <div className='categories'>
+                            <button className="glow-on-hover" onClick={locationBtn}>Locations</button>
+                        </div>
+                    </div>
+                    <div className='buttons'>
+                        <div className='categories'>
+                            <button className="glow-on-hover" onClick={timeBtn}>Avg. Compilation Time</button>
+                        </div>
+                    </div>
+                    <div className='buttons'>
+                        <div className='categories'>
+                            <button className="glow-on-hover" onClick={scoreBtn}>Avg. Scores</button>
+                        </div>
+                    </div>
+                </div>
+                {/* chart.js starts */}
+                <div className='charts'>
+                    <div className='bar'>
+                        <div className='contentArea'>Text Here</div>
+                        {/* Line Starts   */}
+                        {/* <Line data={dataArray} width={400} heigth={400} /> */}
+                        <div className='circle'>
+                            <h5>Text Here</h5>
+                            {/* Doughnut Chart Starts */}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <leftcolumn className="columnOne" id="graph">Description: </leftcolumn>
+            <rightcolumn className="columnTwo">Hello</rightcolumn>
+        </footer>
     </div>
   )
 }
